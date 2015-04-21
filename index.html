@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+ <body>
+ 
+ 
+<!-- Principal -->
+ <div data-role="page" id="principal" >   
+  <div data-role="header">
+    <h1>Aplicación 05</h1>
+  </div>
+  <div data-role="main" class="ui-content" align="center">
+<div data-type="horizontal" data-role="controlgroup" align="center">
+<input type="text" id="txtnombre" placeholder="Nombre">
+</div>
+  
+  <div align="center" >
+   <a href="#" class="ui-btn  ui-btn-icon-right ui-btn-inline ui-icon-carat-r ui-shadow" id="btndatos">Siguiente</a>
+  </div>
+  </div>
+  
+  <div data-role="footer" data-position="fixed">
+    <h1>@José Roberto Ramírez Pérez</h1>
+  </div>
+ </div>  
+<!-- Fin De Principal -->
+
+
+<!-- Datos -->
+<div data-role="page" id="datos" >   
+  <div data-role="header">
+    <h1>Aplicación 05</h1>
+  </div>
+  <div data-role="main" class="ui-content" align="center">
+<input type="number" id="txtpeso" placeholder="Peso">
+<input type="number" id="txttalla"  placeholder="Talla">
+
+
+ <div align="center" >
+<a href="#" class="ui-btn  ui-btn-icon-right ui-icon-star ui-btn-inline ui-shadow" id="btnresultados">Resultados</a>
+ </div>
+</div>
+  <div data-role="footer" data-position="fixed">
+    <h1>@José Roberto Ramírez Pérez</h1>
+  </div>
+</div>  
+<!-- Fin De Datos -->
+
+
+<!-- Resultados -->
+<div data-role="page" id="resultados" >   
+  <div data-role="header">
+    <h1>Aplicación 05</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" align="center">
+    <p>Resultados</p>
+     <p>IMC</p>
+ 
+   
+ <div id="imc">
+ 
+ </div>
+
+ <div align="center" >
+<a href="#principal" class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-inline ui-shadow" id="btnprincipio">Inicio</a>
+ </div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h1>@José Roberto Ramírez Pérez</h1>
+  </div>
+</div>  
+<!-- Fin De Resultados -->
+
+ </body>
+</html> 
